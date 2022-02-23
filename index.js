@@ -7,4 +7,6 @@ app.get('/search', (req, res) => {
     res.send('You searched for: ', item);
 })
 
+app.use('/auth', require('./controllers/auth'));
+
 app.listen(process.env.PORT);
